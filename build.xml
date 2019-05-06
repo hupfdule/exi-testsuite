@@ -78,10 +78,10 @@
     </target>
 
     <target name="delegate-native" if="compileNative">
-        <ant dir="candidates/c/asn1ber" target="${target}"/>        
-        <ant dir="candidates/c/libxml2" target="${target}"/>        
-        <ant dir="candidates/c/x694per" target="${target}"/>        
-        <ant dir="candidates/c/x694perfi" target="${target}"/>        
+        <!--ant dir="candidates/c/asn1ber" target="${target}"/-->        
+        <!--ant dir="candidates/c/libxml2" target="${target}"/-->        
+        <!--ant dir="candidates/c/x694per" target="${target}"/-->        
+        <!--ant dir="candidates/c/x694perfi" target="${target}"/-->        
     </target>
     
     <target name="delegate">
