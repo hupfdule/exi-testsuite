@@ -43,6 +43,7 @@
     <path id="framework.lib.path">
       <pathelement path="framework/lib/faxma-xas.jar"/>
       <pathelement path="framework/lib/faxma.jar"/>
+      <pathelement path="framework/lib/xercesimpl.jar"/>
       <pathelement path="framework/lib/kxml2.jar"/>
     </path>
 
