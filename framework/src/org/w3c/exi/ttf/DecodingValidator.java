@@ -351,7 +351,7 @@ public class DecodingValidator implements XasExtUtil.TypedValueHelper {
 		try {
 			attrTypeField = AttrImpl.class.getDeclaredField("type");
 			attrTypeField.setAccessible(true);
-		} catch (Exception _) {
+		} catch (Exception _ignored) {
 			attrTypeField = null;
 			System.err
 					.println("Warning: Validator could not find the type field for Attributes");
@@ -406,7 +406,7 @@ public class DecodingValidator implements XasExtUtil.TypedValueHelper {
 				setFactoryClassByName(className, SCHEMA_FACTORY);
 				setFactoryClassByName(className, SAX_PARSER_FACTORY);
 				setFactoryClassByName(className, DOCUMENT_BUILDER_FACTORY);
-			} catch (ClassNotFoundException _) {
+			} catch (ClassNotFoundException _ignored) {
 				continue;
 			}
 			factoryNotFound = false;
@@ -629,7 +629,7 @@ public class DecodingValidator implements XasExtUtil.TypedValueHelper {
 
 		/*
 		 * if (!_need_flush_output) { try { System.err.flush(); Thread.sleep(5);
-		 * } catch (Exception _) { } }
+		 * } catch (Exception _ignored) { } }
 		 */
 		endDebug(false);
 		if (_dump_sequence == DumpSequence.SEQ) {
@@ -766,7 +766,7 @@ public class DecodingValidator implements XasExtUtil.TypedValueHelper {
 			String message;
 			try {
 				message = new String(contents, "UTF-8");
-			} catch (UnsupportedEncodingException _) {
+			} catch (UnsupportedEncodingException _ignored) {
 				// this should not happen
 				final int size = contents.length;
 				char[] chars = new char[contents.length];
@@ -2731,7 +2731,7 @@ public class DecodingValidator implements XasExtUtil.TypedValueHelper {
 				}
 				System.out.flush();
 				Thread.sleep(30);
-			} catch (Exception _) {
+			} catch (Exception _ignored) {
 				// ignore
 			}
 			_need_flush_output = false;
@@ -2753,7 +2753,7 @@ public class DecodingValidator implements XasExtUtil.TypedValueHelper {
 					System.err.flush();
 				}
 				Thread.sleep(30);
-			} catch (Exception _) {
+			} catch (Exception _ignored) {
 				// ignore
 			}
 		}
